@@ -1,0 +1,347 @@
+﻿
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+}
+
+.index {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+    .index h2 {
+        color: #fff;
+    }
+
+
+/*#region nav */
+.nav-menu {
+    text-align: center;
+    padding: 500px;
+    justify-content: center;
+    gap: 20px;
+}
+
+    .nav-menu .button {
+        display: flex;
+        padding-top: 10rem;
+        font-size: 50px;
+        bottom: 40px;
+        transition: transform 1s ease, box-shadow 1s ease;
+    }
+
+    .nav-menu .buttonv2 {
+        display: flex;
+        padding-top: 10rem;
+        font-size: 50px;
+        bottom: 40px;
+        transition: transform 1s ease, box-shadow 1s ease;
+    }
+
+    .nav-menu .button:hover {
+        color: #ff0000;
+    }
+
+
+    .nav-menu .button a {
+        justify-content: center;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    .nav-menu .button img {
+        width: 100%;
+        
+        height: auto; /* giữ tỷ lệ gốc */
+        image-rendering: auto;
+    }
+
+    .nav-menu .buttonv2 a {
+        justify-content:center;
+        display: flex;
+        padding: 10px 20px;
+        margin-right: 1rem;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+
+    .nav-menu .buttonv2 img {
+        width: 400px; /* hoặc 50%, hoặc max-width */
+        height: 300px; /* giữ tỷ lệ gốc */
+        image-rendering: auto;
+    }
+
+
+    .nav-menu .button a:hover {
+        color: #fcff00;
+        transition: 1s;
+        transform: translateY(-20px);
+    }
+
+    .nav-menu .buttonv2 a:hover {
+        color: #fcff00;
+        transition: 1s;
+        transform: translateY(-20px);
+    }
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Canh giữa 2 cột trong container */
+    align-items: center; /* (tuỳ chọn) canh dọc nếu có chiều cao */
+    gap: 20px;
+}
+
+.colum {
+    flex: 1; /* Mỗi cột chiếm 50% chiều rộng */
+    display: flex;
+    justify-content: center; /* Canh giữa ảnh theo chiều ngang */
+    align-items: center;
+}
+
+/*#endregion */
+
+
+
+
+
+/*#region index */
+
+
+
+/*#endregion */
+
+
+
+
+
+/*#region kinhthanh */
+.banner-kinhthanh {
+    text-align: center;
+    display: flex;
+}
+
+/* Cấu hình menu chính */
+.menu {
+    list-style-type: none; /* Loại bỏ dấu chấm tròn */
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+    .menu li {
+        position: relative; /* Để các submenu có thể được định vị chính xác */
+        display: inline-block;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        background-color: #333;
+        transition: background-color 0.3s ease;
+    }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+/* Cấu trúc cho nút dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Submenu */
+.submenu {
+    display: none; /* Ẩn submenu mặc định */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    min-width: 160px; /* Chiều rộng submenu */
+}
+
+    .submenu li {
+        display: block;
+    }
+
+    .submenu a {
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: #444;
+        transition: background-color 0.3s ease;
+    }
+
+        .submenu a:hover {
+            background-color: #555;
+        }
+
+/* Hiển thị submenu khi hover lên item của menu */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#endregion */
+/*#region cau goc */
+/*#endregion */
+/*#region bai gian */
+/*#endregion */
+/*#region footer */
+footer {
+}
+
+
+    footer small {
+        color: #ffff !important;
+    }
+
+
+
+    footer .footer-top {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+
+        footer .footer-top .bg-color {
+            padding: 4rem 0;
+            height: 100%;
+            opacity: .9;
+        }
+
+            footer .footer-top .bg-color .input-group {
+                width: 500px;
+                max-width: 90%;
+                margin: auto;
+                background: #fff;
+                border-radius: 40px;
+                padding: 5px;
+                overflow: hidden;
+            }
+
+                footer .footer-top .bg-color .input-group input {
+                    border: none;
+                    box-shadow: none;
+                    outline: none;
+                    padding: 15px;
+                }
+
+
+                footer .footer-top .bg-color .input-group button {
+                    border: none;
+                    border-radius: 30px !important;
+                    color: #fff;
+                    font-weight: 600;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
+
+
+
+                    footer .footer-top .bg-color .input-group button:hover {
+                    }
+
+
+        footer .footer-top .social-list {
+            list-style: none;
+            margin: 2rem 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+            footer .footer-top .social-list li {
+                padding: 0;
+            }
+
+                footer .footer-top .social-list li a {
+                    text-decoration: none;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    footer .footer-top .social-list li a i {
+                        color: #f9417a;
+                        font-size: 25px;
+                    }
+
+
+
+    footer .footer-bottom {
+        color: #6271f6;
+        background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        padding: .5rem 0;
+    }
+
+        footer .footer-bottom a {
+            color: #6271f6;
+            text-decoration: none;
+        }
+/*#endregion */
+
+.loi404 {
+    text-align: center;
+    justify-content: center;
+    color: azure;
+}
+
+    .loi404 i {
+        font-size: 3vh;
+    }
